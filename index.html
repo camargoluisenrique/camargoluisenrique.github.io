@@ -1,26 +1,79 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Portfolio of Luis Enrique Camargo Rangel, Junior Data Scientist focused on Machine Learning, Python, SQL and model deployment."
+  >
+
   <title>Luis Enrique Camargo Rangel | Data Scientist Jr.</title>
+
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
 
   <header class="hero">
+    <nav class="language-nav" aria-label="Language selector">
+      <button
+        type="button"
+        class="language-button active"
+        data-language="en"
+        aria-label="View portfolio in English"
+      >
+        EN
+      </button>
+
+      <span aria-hidden="true">|</span>
+
+      <button
+        type="button"
+        class="language-button"
+        data-language="es"
+        aria-label="Ver portafolio en español"
+      >
+        ES
+      </button>
+    </nav>
+
     <div class="hero-content">
-      <p class="tag">Data Scientist Jr. | Machine Learning | Python | SQL | Model Deployment</p>
+      <p class="tag" data-i18n="heroTag">
+        Data Scientist Jr. | Machine Learning | Python | SQL | Model Deployment
+      </p>
+
       <h1>Luis Enrique Camargo Rangel</h1>
-      <p class="subtitle">
-        I build Machine Learning solutions that transform data into useful insights for real business problems.
+
+      <p class="subtitle" data-i18n="heroSubtitle">
+        I build data products that turn business problems into clear,
+        measurable and actionable decisions.
       </p>
 
       <div class="buttons">
-        <a href="#projects">Projects</a>
-        <a href="https://github.com/camargoluisenrique" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/luiscamargo-ds/" target="_blank">LinkedIn</a>
-        <a href="mailto:lcamargorangel@gmail.com">Contact</a>
+        <a href="#projects" data-i18n="projectsButton">Projects</a>
+
+        <a
+          href="https://github.com/camargoluisenrique"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/luiscamargo-ds/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a href="mailto:lcamargorangel@gmail.com" data-i18n="contactButton">
+          Contact
+        </a>
       </div>
     </div>
   </header>
@@ -28,20 +81,28 @@
   <main>
 
     <section class="section">
-      <h2>About Me</h2>
-      <p>
-        I am a Junior Data Scientist with training in Data Science and previous experience in operational supervision,
-        information analysis, reporting, and technical problem solving.
+      <h2 data-i18n="aboutTitle">About Me</h2>
+
+      <p data-i18n="aboutParagraph1">
+        I am a Junior Data Scientist with practical training in Data Science,
+        Machine Learning and analytical application development with Python.
       </p>
-      <p>
-        I have developed applied projects in vehicle price prediction, credit risk assessment, and financial fraud detection.
-        My profile combines analytical thinking, operational judgment, and the ability to turn data into clear, useful,
-        and actionable solutions.
+
+      <p data-i18n="aboutParagraph2">
+        My previous experience in telecommunications operations adds more than
+        ten years of technical judgment, quality control, documentation,
+        measurement analysis and coordination of field teams.
+      </p>
+
+      <p data-i18n="aboutParagraph3">
+        I focus on transforming data into useful solutions that connect model
+        performance with real business decisions.
       </p>
     </section>
 
     <section class="section">
-      <h2>Technical Skills</h2>
+      <h2 data-i18n="skillsTitle">Technical Skills</h2>
+
       <div class="skills">
         <span>Python</span>
         <span>SQL</span>
@@ -49,88 +110,371 @@
         <span>NumPy</span>
         <span>Scikit-learn</span>
         <span>Machine Learning</span>
+        <span>Feature Engineering</span>
+        <span>Model Evaluation</span>
+        <span>EDA</span>
+        <span>Data Visualization</span>
         <span>Streamlit</span>
         <span>Git</span>
         <span>GitHub</span>
-        <span>Basic Docker</span>
+        <span>Docker</span>
         <span>Model Deployment</span>
+        <span>Power BI — Learning Path</span>
       </div>
     </section>
 
+    <section class="section featured-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="newGenerationLabel">
+          New generation project
+        </p>
+
+        <h2 data-i18n="featuredProjectTitle">Featured Project 2026–2027</h2>
+      </div>
+
+      <article class="featured-card">
+        <div>
+          <span class="status-badge" data-i18n="inDevelopment">
+            In development
+          </span>
+
+          <h3>IQRetail</h3>
+
+          <p class="project-type">
+            AI-Powered Retail Intelligence Platform
+          </p>
+
+          <p data-i18n="iqRetailDescription">
+            A business-oriented analytics platform designed for an omnichannel
+            retail group operating across Latin America. The project will
+            integrate SQL, Python, Machine Learning and Power BI to support
+            sales, inventory and demand-planning decisions.
+          </p>
+
+          <div class="project-detail-grid">
+            <div>
+              <h4 data-i18n="currentPhaseLabel">Current phase</h4>
+              <p data-i18n="currentPhaseValue">
+                Product discovery and definition
+              </p>
+            </div>
+
+            <div>
+              <h4 data-i18n="plannedModulesLabel">Planned modules</h4>
+              <p>
+                Executive Pulse · Sales Intelligence · Inventory Intelligence ·
+                Demand Forecast
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-mark" aria-hidden="true">IQ</div>
+      </article>
+    </section>
+
     <section class="section" id="projects">
-      <h2>Featured Projects</h2>
+      <h2 data-i18n="projectsTitle">Selected Data Science Projects</h2>
 
       <div class="projects">
 
         <article class="card">
-          <img class="project-image" src="assets/vehicle-price-ai-preview.png" alt="Vehicle Price AI application preview">
+          <img
+            class="project-image"
+            src="assets/vehicle-price-ai-preview.png"
+            alt="Vehicle Price AI application preview"
+          >
+
           <h3>Vehicle Price AI</h3>
-          <p class="project-type">Vehicle price prediction with Machine Learning</p>
-          <p>
-            Machine Learning application designed to estimate used vehicle prices based on vehicle features.
-            The project includes data cleaning, exploratory data analysis, supervised model training,
-            evaluation using MAE/RMSE, and web deployment.
+
+          <p class="project-type" data-i18n="vehicleType">
+            Used vehicle price prediction
           </p>
-          <p><strong>Technologies:</strong> Python, Pandas, Scikit-learn, Streamlit, Docker, Render.</p>
+
+          <h4 data-i18n="businessProblemLabel">Business problem</h4>
+
+          <p data-i18n="vehicleProblem">
+            Used vehicle pricing can be inconsistent when decisions depend only
+            on intuition or limited market references.
+          </p>
+
+          <h4 data-i18n="businessValueLabel">Business value</h4>
+
+          <p data-i18n="vehicleValue">
+            Supports dealerships and individual sellers with a consistent,
+            data-driven price estimate based on vehicle characteristics.
+          </p>
+
+          <h4 data-i18n="keyResultsLabel">Key results</h4>
+
+          <ul class="project-list">
+            <li>MAE: 3,549</li>
+            <li>RMSE: 5,375</li>
+            <li data-i18n="vehicleResult3">
+              Interactive prediction and feature-importance interface
+            </li>
+          </ul>
+
+          <h4 data-i18n="contributionLabel">My contribution</h4>
+
+          <p data-i18n="vehicleContribution">
+            Data cleaning, exploratory analysis, feature engineering, model
+            evaluation, Streamlit interface, Docker configuration and
+            deployment documentation.
+          </p>
+
+          <p>
+            <strong data-i18n="technologiesLabel">Technologies:</strong>
+            Python, Pandas, Scikit-learn, Streamlit, Docker.
+          </p>
+
           <div class="project-links">
-            <a href="https://github.com/camargoluisenrique/vehicle-price-ai" target="_blank">Repository</a>
-            <a href="https://vehicle-price-ai.onrender.com" target="_blank">Live Demo</a>
+            <a
+              href="https://github.com/camargoluisenrique/vehicle-price-ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="repositoryButton"
+            >
+              Repository
+            </a>
+
+            <span class="inactive-link" data-i18n="demoMigration">
+              Demo migration in progress
+            </span>
           </div>
         </article>
 
         <article class="card">
-          <img class="project-image" src="assets/fraud-detection-ai-preview.png" alt="Fraud Detection AI application preview">
+          <img
+            class="project-image"
+            src="assets/fraud-detection-ai-preview.png"
+            alt="Fraud Detection AI application preview"
+          >
+
           <h3>Fraud Detection AI</h3>
-          <p class="project-type">Financial fraud detection with Machine Learning</p>
-          <p>
-            Machine Learning application designed to identify potentially fraudulent financial transactions
-            using an imbalanced classification approach, fraud probability estimation, adjustable decision threshold,
-            ROC curve, and confusion matrix.
+
+          <p class="project-type" data-i18n="fraudType">
+            Financial transaction risk detection
           </p>
-          <p><strong>Technologies:</strong> Python, Pandas, Scikit-learn, Random Forest, Streamlit.</p>
+
+          <h4 data-i18n="businessProblemLabel">Business problem</h4>
+
+          <p data-i18n="fraudProblem">
+            Fraudulent transactions are rare, making overall accuracy
+            insufficient for evaluating whether a model detects the cases that
+            matter most.
+          </p>
+
+          <h4 data-i18n="businessValueLabel">Business value</h4>
+
+          <p data-i18n="fraudValue">
+            Helps risk teams prioritize suspicious transactions while making
+            the trade-off between missed fraud and false alerts visible.
+          </p>
+
+          <h4 data-i18n="keyResultsLabel">Key results</h4>
+
+          <ul class="project-list">
+            <li>ROC AUC: ≈ 0.98</li>
+            <li data-i18n="fraudResult2">
+              Adjustable decision threshold
+            </li>
+            <li data-i18n="fraudResult3">
+              ROC curve and confusion-matrix analysis
+            </li>
+          </ul>
+
+          <h4 data-i18n="contributionLabel">My contribution</h4>
+
+          <p data-i18n="fraudContribution">
+            Imbalance handling, metric selection, threshold-based decision
+            logic, model evaluation and interactive Streamlit application.
+          </p>
+
+          <p>
+            <strong data-i18n="technologiesLabel">Technologies:</strong>
+            Python, Pandas, Scikit-learn, Random Forest, Streamlit.
+          </p>
+
           <div class="project-links">
-            <a href="https://github.com/camargoluisenrique/fraud-detection-ai" target="_blank">Repository</a>
-            <a href="https://fraud-detection-ai-s2xftbqgz8mffnelg5xgsr.streamlit.app/" target="_blank">Streamlit Demo</a>
+            <a
+              href="https://github.com/camargoluisenrique/fraud-detection-ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="repositoryButton"
+            >
+              Repository
+            </a>
+
+            <a
+              href="https://fraud-detection-ai-s2xftbqgz8mffnelg5xgsr.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="openDemoButton"
+            >
+              Open Demo
+            </a>
           </div>
         </article>
 
         <article class="card">
-          <img class="project-image" src="assets/credit-risk-ai-preview.png" alt="Credit Risk AI application preview">
+          <img
+            class="project-image"
+            src="assets/credit-risk-ai-preview.png"
+            alt="Credit Risk AI application preview"
+          >
+
           <h3>Credit Risk AI</h3>
-          <p class="project-type">Credit risk classification and decision support</p>
-          <p>
-            Machine Learning application designed to estimate default probability, generate a credit risk score,
-            and support loan approval, review, or rejection decisions through a simplified credit risk workflow.
+
+          <p class="project-type" data-i18n="creditType">
+            Credit risk classification and decision support
           </p>
-          <p><strong>Technologies:</strong> Python, Pandas, Scikit-learn, Logistic Regression, Random Forest, Streamlit.</p>
+
+          <h4 data-i18n="businessProblemLabel">Business problem</h4>
+
+          <p data-i18n="creditProblem">
+            Lending decisions require a consistent way to estimate default risk
+            and convert probabilities into an understandable recommendation.
+          </p>
+
+          <h4 data-i18n="businessValueLabel">Business value</h4>
+
+          <p data-i18n="creditValue">
+            Supports loan officers with probability-based scoring and a
+            simplified approve, review or reject workflow.
+          </p>
+
+          <h4 data-i18n="keyResultsLabel">Key results</h4>
+
+          <ul class="project-list">
+            <li>Logistic Regression ROC AUC: 0.992</li>
+            <li>Random Forest ROC AUC: 1.000</li>
+            <li data-i18n="creditResult3">
+              Probability converted into a 300–850 credit score
+            </li>
+          </ul>
+
+          <p class="metric-note" data-i18n="creditMetricNote">
+            Results correspond to the prepared portfolio dataset and should not
+            be interpreted as production validation.
+          </p>
+
+          <h4 data-i18n="contributionLabel">My contribution</h4>
+
+          <p data-i18n="creditContribution">
+            Baseline definition, model comparison, ROC AUC evaluation, scoring
+            rules, decision workflow and Streamlit interface.
+          </p>
+
+          <p>
+            <strong data-i18n="technologiesLabel">Technologies:</strong>
+            Python, Pandas, Scikit-learn, Logistic Regression, Random Forest,
+            Streamlit.
+          </p>
+
           <div class="project-links">
-            <a href="https://github.com/camargoluisenrique/credit-risk-ai" target="_blank">Repository</a>
-            <a href="https://credit-risk-ai-livduk4ttdjaeyvx8vl5h6.streamlit.app/" target="_blank">Streamlit Demo</a>
+            <a
+              href="https://github.com/camargoluisenrique/credit-risk-ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="repositoryButton"
+            >
+              Repository
+            </a>
+
+            <a
+              href="https://credit-risk-ai-livduk4ttdjaeyvx8vl5h6.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="openDemoButton"
+            >
+              Open Demo
+            </a>
           </div>
         </article>
 
       </div>
 
-      <p class="note">
-        Note: Screenshots are included as always-available previews. Interactive demos remain available through Render or Streamlit and may take a few moments to start after inactivity.
+      <p class="note" data-i18n="demoNote">
+        Screenshots remain available as permanent previews. Active Streamlit
+        demos may take a few moments to resume after inactivity.
       </p>
     </section>
 
     <section class="section">
-      <h2>Continuous Improvement</h2>
-      <ul>
-        <li>Add short GIFs showing how each application works.</li>
-        <li>Improve project storytelling by expanding business context, technical decisions, and conclusions.</li>
-        <li>Include model comparison, cross-validation, stronger pipelines, and more stable deployment workflows.</li>
-        <li>Keep this portfolio updated as new projects are developed or existing ones are improved.</li>
-      </ul>
+      <h2 data-i18n="roadmapTitle">Professional Roadmap</h2>
+
+      <div class="roadmap-grid">
+        <article>
+          <span>01</span>
+          <h3>Power BI</h3>
+          <p data-i18n="roadmapPowerBI">
+            Executive dashboards, data modeling, DAX and business storytelling.
+          </p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3 data-i18n="roadmapForecastTitle">Forecasting</h3>
+          <p data-i18n="roadmapForecast">
+            Demand prediction, time-based validation and error analysis.
+          </p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3 data-i18n="roadmapEngineeringTitle">Data Product Engineering</h3>
+          <p data-i18n="roadmapEngineering">
+            Reproducible pipelines, testing, deployment and monitoring.
+          </p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3 data-i18n="roadmapBusinessTitle">Business Analytics</h3>
+          <p data-i18n="roadmapBusiness">
+            Connecting model performance with operational and strategic
+            decisions.
+          </p>
+        </article>
+      </div>
     </section>
 
     <section class="section contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:lcamargorangel@gmail.com">lcamargorangel@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/luiscamargo-ds/" target="_blank">linkedin.com/in/luiscamargo-ds</a></p>
-      <p>GitHub: <a href="https://github.com/camargoluisenrique" target="_blank">github.com/camargoluisenrique</a></p>
+      <h2 data-i18n="contactTitle">Contact</h2>
+
+      <p>
+        Email:
+        <a href="mailto:lcamargorangel@gmail.com">
+          lcamargorangel@gmail.com
+        </a>
+      </p>
+
+      <p>
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/luiscamargo-ds/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          linkedin.com/in/luiscamargo-ds
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a
+          href="https://github.com/camargoluisenrique"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          github.com/camargoluisenrique
+        </a>
+      </p>
+
+      <p class="language-note" data-i18n="languageNote">
+        This portfolio is available in English and Spanish.
+      </p>
     </section>
 
   </main>
